@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="pages/Dashboard/styles/global.css" />
+  <link rel="stylesheet" href="pages/Dashboard/styles/scan.css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <title>Scan Receipt</title>
+</head>
+<body>
+    <main>
+      </div>
+        <section id="scan-receipt">
+          <h2 class="center">Scan Receipt</h2><br>
+          <div class="scan-popup">
+            <div class="scan-buttons">
+              <label for="fileInput">
+                <button id="uploadButton">Upload</button>
+              </label>
+              <input type="file" id="fileInput" accept="image/jpeg,image/png" />
+            </div>
+            <div id="imageContainer">
+              <!-- Inside elements will be created and shown here dynamically -->
+            </div>
+            <div class="scan-buttons">
+                <label for="scanfile">
+                  <button id="scanButton">Scan</button>
+                </label>
+              </div>
+              <div id="scanDescription" class="scandetails" style="display: none;">
+                <p>Description: <span></span></p>
+              </div>
+              <div id="scanDate" class="scandetails" style="display: none;">
+                <p>Date: <span></span></p>
+              </div>
+              <div id="scanExpense" class="scandetails" style="display: none;">
+                <p>Expense: <span></span></p>
+              </div>
+          </div>
+        </section>
+        
+      </main>
+  <script src="pages/Dashboard/scripts/upload.js"></script>
+  <script src="pages/Dashboard/scripts/scan.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/tesseract.js@2.1.5/dist/tesseract.min.js"></script>
+
+</html>

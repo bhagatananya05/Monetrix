@@ -1,0 +1,124 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #181a1e;
+  color: #fff;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.center {
+  text-align: center;
+}
+
+#scan-receipt .scan-popup {
+  background:#202528;
+  border-radius: 30px;
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+  box-shadow:  0 2rem 3rem rgba(0, 0, 0, 0.4);
+  transition: all 300ms ease;
+}
+
+#scan-receipt .scan-popup h2 {
+  font-size: 1.4rem;
+  color: #2e7d32;
+  margin-bottom: 20px;
+}
+
+#scan-receipt .scan-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+#scan-receipt .scan-buttons button {
+  background-color: #2e7d32;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#scan-receipt .scan-buttons input[type="file"] {
+  display: none;
+}
+
+#scan-receipt #imageContainer {
+  text-align: center;
+  margin-top: 20px;
+  position: relative;
+  overflow: hidden;
+  max-width: 630px;
+  max-height: 280px;
+}
+
+#scan-receipt #uploadedImage {
+  max-width: 100px;
+  max-height: 100px;
+  display: block;
+  margin: 0 auto;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+#scan-receipt #fileNameLabel {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #878787;
+  margin-top: 10px;
+}
+
+#scanResults {
+  display: none;
+  margin-top: 20px;
+}
+
+#scanResults h4 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+#scanResults {
+  display: none;
+  margin-top: 20px;
+}
+
+#scanResults h4 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+#scanResults p {
+  font-size: 1rem;
+  color: #fff;
+}
+
+#scanResults button {
+  background-color: #439e47;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.scandetails {
+  display: none; /* Initially hide the extracted description */
+  font-size: 1rem;
+  color: #ffffff;
+  margin-top: 10px;
+}

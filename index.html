@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./styles/styles.css" />
+  <link rel="stylesheet" href="./styles/media.css" />
+  <link rel="shortcut icon" href="./pages/Dashboard/assets/favicon.svg" type="image/x-icon" />
+  <script src="https://unpkg.com/feather-icons"></script>
+  <title>Monances App</title>
+</head>
+
+<body>
+  <header class="container">
+    <nav>
+      <div class="logo">
+        <img src="./images/logo.png" alt="Logo Monetrix" />
+      </div>
+
+      <div class="buttons">
+        <a href="#contact" class="button contact">Contact</a>
+        <a href="./pages/Dashboard/dashboard.html" class="button get-started">Dashboard</a>
+      </div>
+
+      <div class="mobile-menu">
+        <div class="open-close">
+          <img src="./images/menu.svg" alt="Menu" class="open" onclick="Menu.open()" />
+          <img src="./images/close.svg" alt="Close" class="close" onclick="Menu.close()" />
+
+          <div class="logo-menu">
+            <img src="./images/logo.png" alt="" />
+
+          </div>
+        </div>
+        <div class="menu">
+          <div class="menu-open">
+            <div class="menu-items">
+              <ul>
+                <li><a href="./index.html" onclick="Menu.close()">Home</a></li>
+                <li><a href="#contact" onclick="Menu.close()">Contact</a></li>
+                <li>
+                  <a href="./pages/Dashboard/dashboard.html" onclick="Menu.close()">Get Started</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="header-content" id="mission">
+      <div class="header-content-left">
+        <h1>Unleash Your Financial Potential</h1>
+        <p>
+          Track, analyze, and succeed in achieving your financial goals with unparalleled ease and precision.
+        </p>
+        <a href="./pages/Dashboard/dashboard.html" class="button get-started">Go to Dashboard</a>
+      </div>
+
+      <div class="header-content-right">
+        <img src="./images/team.png" alt=" Team image" />
+      </div>
+    </div>
+  </header>
+  <!--END OF HEADER-------------------- -->
+
+  <main>
+    <section class="app-preview container" id="preview">
+      <div class="app-preview-left">
+        <img src="./images/laptop_preview.svg" alt="App image" />
+      </div>
+
+      <div class="app-preview-right">
+        <h2 class="section-title">Smarter Money, Brighter Future</h2>
+        <p class="section-paragraph">
+          Say Goodbye to Spreadsheets, Streamline Budgets, and Effortlessly Manage Incomes and Expenses with Unmatched
+          Flexibility.
+        </p>
+        <div class="get-started-line">
+          <a href="./pages/Dashboard/dashboard.html" class="get-started">Get Started</a>
+          <div class="green-line"></div>
+        </div>
+      </div>
+    </section>
+    <!--END OF app-preview container SECTION-------------------- -->
+
+    <section class="track-your-spending container" id="track">
+      <div class="track-your-spending-left">
+        <h2 class="section-title">Track,Budget, Thrive</h2>
+        <p class="section-paragraph">
+          Transform Your Finances, Unleash Your Potential: Effortlessly Track Spending, Create Personalized Budgets, and
+          Achieve Goals, All with Zero Financial Burden.
+        </p>
+        <div class="get-started-line">
+          <a href="./pages/Dashboard/dashboard.html" class="get-started">Get Started</a>
+          <div class="green-line"></div>
+        </div>
+      </div>
+
+      <div class="track-your-spending-right">
+        <img src="./images/idea.png" alt="image" />
+      </div>
+    </section>
+    <!--END OF track-your-spending SECTION-------------------- -->
+
+    <section class="app-preview container">
+      <div class="app-preview-left">
+        <img src="./images/chart.png" alt="App image" />
+      </div>
+
+      <div class="app-preview-right">
+        <h2 class="section-title">Financial Clarity Unleashed</h2>
+        <p class="section-paragraph">
+          Consolidate Your Spending Patterns in One Report. Visualize Your Income and Expenses with Easy-to-Read Graphs,
+          All in a Single View.
+        </p>
+        <div class="get-started-line">
+          <a href="./pages/Dashboard/dashboard.html" class="get-started">Get Started</a>
+          <div class="green-line"></div>
+        </div>
+      </div>
+    </section>
+    <!--END OF track-your-spending SECTION-------------------- -->
+    <section id="contact" class="get-in-touch container">
+      <div class="get-in-touch-content">
+        <div class="get-in-touch-left">
+          <h2 class="section-title">Get in touch with us.</h2>
+        </div>
+        <div class="get-in-touch-right">
+          <a href="https://www.linkedin.com/in/ananya-bhagat-95015b225/" class="button get-started">Contact</a>
+        </div>
+      </div>
+    </section>
+    <!--END OF get-in-touch SECTION-------------------- -->
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-card">
+        <h3><a href="#mission">Our mission</a></h3>
+      </div>
+      <div class="footer-card">
+        <h3><a href="#preview">Services</a></h3>
+      </div>
+      <div class="footer-card">
+        <h3><a href="mailto:monetrix@gmail.com">Get in touch</a></h3>
+      </div>
+    </div>
+
+    <div class="footer-container">
+
+      <div class="footer-card">
+        <a href="https://www.linkedin.com/in/ananya-bhagat-95015b225/" target="_blank" id="linkedin"><i
+            data-feather="linkedin"></i></a>
+      </div>
+      <div class="footer-card"> <a href="https://github.com/bhagatananya05/Monetrix" target="_blank"><i data-feather="github"
+            id="git"></i></a></div>
+      <div class="footer-card"> <a href="https://instagram.com/monetrix" target="_blank" id="insta"><i
+            data-feather="instagram"></i></a></div>
+
+    </div>
+
+  </footer>
+  <!--END OF FOOTER-------------------- -->
+
+  <!--LOADING SCREEN-->
+  <div class="loader-overlay">
+    <div class="loader"></div>
+  </div>
+
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="scrollReveal.js"></script>
+  <script src="home.js"></script>
+  <script>
+    feather.replace();
+  </script>
+
+  <script>
+    // ==== LOADING SCREEN
+    let spinner = document.querySelector('.loader-overlay');
+
+    window.addEventListener('load', () => {
+      spinner.parentElement.removeChild(spinner);
+    })
+  </script>
+</body>
+
+</html>
